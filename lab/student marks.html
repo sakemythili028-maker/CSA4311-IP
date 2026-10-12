@@ -1,0 +1,59 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks</title>
+</head>
+
+<body>
+
+<h2>Student Marks</h2>
+
+<table border="1">
+<tr>
+    <th>Name</th>
+    <th>CA1</th>
+    <th>CA2</th>
+    <th>Model</th>
+    <th>Total</th>
+</tr>
+
+<tr>
+    <td><input id="n1"></td>
+    <td><input id="a1"></td>
+    <td><input id="b1"></td>
+    <td><input id="m1"></td>
+    <td id="t1">-</td>
+</tr>
+
+<tr>
+    <td><input id="n2"></td>
+    <td><input id="a2"></td>
+    <td><input id="b2"></td>
+    <td><input id="m2"></td>
+    <td id="t2">-</td>
+</tr>
+
+<tr>
+    <td><input id="n3"></td>
+    <td><input id="a3"></td>
+    <td><input id="b3"></td>
+    <td><input id="m3"></td>
+    <td id="t3">-</td>
+</tr>
+</table>
+
+<br>
+<button onclick="add()">Calculate</button>
+
+<script>
+function add() {
+    t1.innerHTML = +a1.value + +b1.value + +m1.value;
+    t2.innerHTML = +a2.value + +b2.value + +m2.value;
+    t3.innerHTML = +a3.value + +b3.value + +m3.value;
+}
+</script>
+
+</body>
+</html>
+```
