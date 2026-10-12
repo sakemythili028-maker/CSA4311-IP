@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mythili | Student Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f2ff;
+            color: #292747;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #5146d8, #a18aff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: white;
+            color: #5146d8;
+            padding: 8px 20px;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background: #292747;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bcb5ff;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            margin: 35px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(80, 70, 150, 0.1);
+        }
+
+        h2 {
+            color: #5146d8;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e3dfff;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #5146d8;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .about-text {
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        /* Education */
+        .education-box {
+            background: #f7f5ff;
+            border-left: 5px solid #7668ed;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .education-box h3 {
+            margin-top: 0;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #e9e5ff;
+            color: #5146d8;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .project {
+            background: #f7f5ff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 5px solid #7668ed;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+        }
+
+        /* Certification */
+        .certificate {
+            background: #fff7e8;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #f2b544;
+        }
+
+        /* Hobbies */
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .hobby {
+            background: #e9f7f0;
+            padding: 15px 25px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        /* Contact */
+        .contact p {
+            margin: 12px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .contact a {
+            color: #5146d8;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #292747;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                position: static;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Mythili</h1>
+
+        <p>Computer Science Engineering Student</p>
+
+        <p>B.E. Computer Science and Engineering</p>
+
+        <div class="tag">
+            Aspiring Software Developer
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#studies">Studies</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certification</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ABOUT ME -->
+        <section class="card" id="about">
+
+            <h2>About Me</h2>
+
+            <p class="about-text">
+                Hello! I am Mythili, a passionate and enthusiastic
+                Computer Science Engineering student pursuing my
+                Bachelor of Engineering in Computer Science and
+                Engineering.
+
+                I am currently studying in my third year and
+                continuously improving my technical knowledge,
+                programming skills, and problem-solving abilities.
+            </p>
+
+            <br>
+
+            <p class="about-text">
+                I have an interest in programming, web development,
+                database management, and emerging technologies.
+                I enjoy learning new concepts and applying my
+                knowledge through academic projects and practical
+                laboratory experiments.
+            </p>
+
+            <br>
+
+            <p class="about-text">
+                My goal is to become a skilled Software Developer,
+                develop useful applications, and contribute to
+                innovative technology solutions.
+            </p>
+
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="card" id="education">
+
+            <h2>Educational Background</h2>
+
+            <div class="education-box">
+
+                <h3>Bachelor of Engineering (B.E.)</h3>
+
+                <p><b>Department:</b>
+                    Computer Science and Engineering
+                </p>
+
+                <p><b>College:</b>
+                    Not specified
+                </p>
+
+                <p><b>University:</b>
+                    Not specified
+                </p>
+
+                <p><b>Current Year:</b>
+                    3rd Year
+                </p>
+
+                <p><b>Academic Duration:</b>
+                    2024 - 2028
+                </p>
+
+                <p><b>Status:</b>
+                    Undergraduate Student
+                </p>
+
+            </div>
+
+            <div class="education-box">
+
+                <h3>Higher Secondary Education</h3>
+
+                <p><b>Institution:</b>
+                    Sri Chaitanya Junior College
+                </p>
+
+                <p><b>Qualification:</b>
+                    12th Standard
+                </p>
+
+                <p><b>Percentage:</b>
+                    93%
+                </p>
+
+            </div>
+
+            <div class="education-box">
+
+                <h3>Secondary Education</h3>
+
+                <p><b>School:</b>
+                    Sri Chaitanya
+                </p>
+
+                <p><b>Qualification:</b>
+                    10th Standard
+                </p>
+
+                <p><b>Percentage:</b>
+                    91%
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ACADEMIC STUDIES -->
+        <section class="card" id="studies">
+
+            <h2>My Academic Studies</h2>
+
+            <p>
+                My Computer Science Engineering curriculum helps
+                me develop a strong foundation in programming,
+                algorithms, databases, computer systems, and
+                software development.
+            </p>
+
+            <h3>1. Programming and Problem Solving</h3>
+
+            <p>
+                I study programming fundamentals, variables,
+                data types, conditional statements, loops,
+                functions, arrays, and object-oriented
+                programming using Python, C, and Java.
+            </p>
+
+            <h3>2. Design and Analysis of Algorithms</h3>
+
+            <p>
+                I learn searching, sorting, recursion,
+                divide-and-conquer techniques, dynamic
+                programming, graph algorithms, and time
+                and space complexity.
+            </p>
+
+            <h3>3. Database Management Systems</h3>
+
+            <p>
+                I study database design, SQL queries,
+                relational databases, keys, normalization,
+                and data management concepts.
+            </p>
+
+            <h3>4. Web Development</h3>
+
+            <p>
+                I am learning HTML for webpage structure,
+                CSS for styling and layouts, and web
+                technologies to create attractive and
+                responsive websites.
+            </p>
+
+            <h3>5. Artificial Intelligence and Data Mining</h3>
+
+            <p>
+                I explore machine learning fundamentals,
+                classification, clustering, data preprocessing,
+                and intelligent systems through academic
+                exercises and projects.
+            </p>
+
+            <h3>6. Practical Laboratory Experience</h3>
+
+            <p>
+                I practice programming, algorithm implementation,
+                embedded systems, and software tools through
+                laboratory experiments and academic assignments.
+                This helps me connect theoretical concepts
+                with practical applications.
+            </p>
+
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section class="card" id="skills">
+
+            <h2>Technical Skills</h2>
+
+            <h3>Programming Languages</h3>
+
+            <div class="skills">
+                <span>Python</span>
+                <span>C</span>
+                <span>Java</span>
+            </div>
+
+            <h3>Web Technologies</h3>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+            <h3>Database and Computer Science</h3>
+
+            <div class="skills">
+                <span>SQL</span>
+                <span>DBMS</span>
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+                <span>Data Mining</span>
+            </div>
+
+            <h3>Tools</h3>
+
+            <div class="skills">
+                <span>VS Code</span>
+                <span>Python IDLE</span>
+                <span>Google Colab</span>
+            </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="card" id="projects">
+
+            <h2>Academic Projects</h2>
+
+            <div class="project">
+
+                <h3>1. AI-Based Crop Disease Detection</h3>
+
+                <p>
+                    This project focuses on identifying plant
+                    diseases from leaf images using deep learning.
+                    It aims to support crop health monitoring
+                    by recognizing disease categories and
+                    providing relevant information.
+                </p>
+
+                <p>
+                    <b>Technologies:</b>
+                    Python, CNN, MobileNetV2, FastAPI
+                </p>
+
+                <p>
+                    <b>Learning Outcome:</b>
+                    Image classification, model development,
+                    and practical application of machine learning.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>2. DNA Sequence Alignment</h3>
+
+                <p>
+                    This project implements the Needleman-Wunsch
+                    algorithm using dynamic programming to
+                    align two DNA sequences and identify
+                    similarities between them.
+                </p>
+
+                <p>
+                    <b>Technologies:</b>
+                    Python, NumPy, Matplotlib
+                </p>
+
+                <p>
+                    <b>Learning Outcome:</b>
+                    Dynamic programming, algorithm implementation,
+                    and sequence visualization.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="card" id="certifications">
+
+            <h2>Certifications and Achievements</h2>
+
+            <div class="certificate">
+
+                <h3>Oracle DBMS</h3>
+
+                <p>
+                    <b>Certification:</b>
+                    Oracle DBMS
+                </p>
+
+                <p>
+                    This certification reflects my learning
+                    and interest in database management
+                    and database technologies.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CAREER GOAL -->
+        <section class="card" id="career">
+
+            <h2>Career Objective</h2>
+
+            <p>
+                My short-term goal is to strengthen my
+                programming fundamentals, improve my
+                technical skills, and gain practical
+                experience through internships and projects.
+            </p>
+
+            <br>
+
+            <p>
+                My long-term goal is to become a Software
+                Developer, contribute to meaningful software
+                applications, and continuously learn new
+                technologies in the IT industry.
+            </p>
+
+        </section>
+
+        <!-- HOBBIES -->
+        <section class="card" id="hobbies">
+
+            <h2>Hobbies and Interests</h2>
+
+            <div class="hobbies">
+
+                <div class="hobby">
+                    Playing Games
+                </div>
+
+                <div class="hobby">
+                    Listening to Stories
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="card contact" id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Feel free to connect with me regarding
+                technology, learning, and academic projects.
+            </p>
+
+            <p>
+                <b>Name:</b> Mythili
+            </p>
+
+            <p>
+                <b>Email:</b>
+                <a href="mailto:sakemythili028@gmail.com">
+                    sakemythili028@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <b>Career Interest:</b>
+                Software Development
+            </p>
+
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>Thank You for Visiting My Profile!</h3>
+
+        <p>Designed and Developed by Mythili</p>
+
+        <p>Learning Today, Building Tomorrow.</p>
+
+        <p>&copy; 2026 Mythili. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
