@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyToll</title>
+</head>
+<body style="font-family:Arial; background-color:lightblue; text-align:center;">
+
+    <h1>EasyToll</h1>
+    <h3>Pay Toll in Advance</h3>
+
+    <h2>Vehicle Details</h2>
+    <input type="text" placeholder="Vehicle Number"><br><br>
+
+    <h2>Toll Payment</h2>
+    <input type="text" placeholder="Enter Route"><br><br>
+    <input type="number" id="amount" placeholder="Toll Amount"><br><br>
+
+    <button onclick="pay()">Pay Toll</button>
+
+    <p id="result"></p>
+
+    <script>
+        function pay() {
+            let amount = document.getElementById("amount").value;
+
+            if (amount > 0) {
+                document.getElementById("result").innerHTML =
+                "Toll Paid Successfully! Travel Without Queue.";
+            } else {
+                document.getElementById("result").innerHTML =
+                "Enter a valid amount.";
+            }
+        }
+    </script>
+
+</body>
+</html>
