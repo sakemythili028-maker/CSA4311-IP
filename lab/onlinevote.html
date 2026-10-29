@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoteOnline</title>
+</head>
+<body style="font-family:Arial; background-color:lightyellow; text-align:center;">
+
+    <h1>VoteOnline</h1>
+    <h3>Cast Your Vote Online</h3>
+
+    <h2>Voter Login</h2>
+    <input type="text" id="name" placeholder="Enter Voter Name"><br><br>
+
+    <h2>Select Your Candidate</h2>
+    <input type="radio" name="vote" value="Candidate A"> Candidate A<br>
+    <input type="radio" name="vote" value="Candidate B"> Candidate B<br>
+    <input type="radio" name="vote" value="Candidate C"> Candidate C<br><br>
+
+    <button onclick="vote()">Submit Vote</button>
+
+    <p id="result"></p>
+
+    <script>
+        function vote() {
+            let name = document.getElementById("name").value;
+            let candidate = document.querySelector('input[name="vote"]:checked');
+
+            if (name != "" && candidate) {
+                document.getElementById("result").innerHTML =
+                    "Thank you " + name + "! Your vote is submitted.";
+            } else {
+                document.getElementById("result").innerHTML =
+                    "Enter your name and select a candidate.";
+            }
+        }
+    </script>
+
+</body>
+</html>
