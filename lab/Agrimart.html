@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AgriMart</title>
+</head>
+<body style="font-family:Arial; background-color:lightgreen; text-align:center;">
+
+    <h1>AgriMart</h1>
+    <h3>Online Shopping for Farmers</h3>
+
+    <h2>Our Products</h2>
+
+    <select id="product">
+        <option>Seeds</option>
+        <option>Fertilizers</option>
+        <option>Pesticides</option>
+        <option>Farming Equipment</option>
+    </select><br><br>
+
+    <input type="number" id="price" placeholder="Enter Product Price"><br><br>
+
+    <button onclick="order()">Place Order</button>
+
+    <p id="result"></p>
+
+    <script>
+        function order() {
+            let product = document.getElementById("product").value;
+            let price = document.getElementById("price").value;
+
+            if (price > 0) {
+                document.getElementById("result").innerHTML =
+                    "Order placed for " + product + 
+                    ". Price: ₹" + price;
+            } else {
+                document.getElementById("result").innerHTML =
+                    "Please enter a valid price.";
+            }
+        }
+    </script>
+
+</body>
+</html>

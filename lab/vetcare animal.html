@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VetCare</title>
+</head>
+<body style="font-family:Arial; background-color:lightgreen; text-align:center;">
+
+    <h1>VetCare</h1>
+    <h3>Online Animal Doctor Consultation</h3>
+
+    <h2>Farmer Registration</h2>
+    <input type="text" placeholder="Farmer Name"><br><br>
+    <input type="text" placeholder="Animal Name"><br><br>
+
+    <h2>Animal Symptoms</h2>
+    <select>
+        <option>Fever</option>
+        <option>Not Eating</option>
+        <option>Skin Disease</option>
+        <option>Injury</option>
+    </select><br><br>
+
+    <textarea placeholder="Describe Animal Symptoms"></textarea><br><br>
+
+    <input type="file" accept="image/*,video/*,audio/*"><br><br>
+
+    <button onclick="consult()">Send to Doctor</button>
+
+    <p id="result"></p>
+
+    <script>
+        function consult() {
+            document.getElementById("result").innerHTML =
+                "Request sent successfully! Doctor will respond soon.";
+        }
+    </script>
+
+</body>
+</html>

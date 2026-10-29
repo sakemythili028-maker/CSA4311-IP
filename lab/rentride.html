@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RentRide</title>
+</head>
+<body style="font-family:Arial; background-color:lightblue; text-align:center;">
+
+    <h1>RentRide</h1>
+    <h3>Rent Your Ride Easily!</h3>
+
+    <h2>Book a Vehicle</h2>
+
+    <input type="text" id="location" placeholder="Enter Location"><br><br>
+
+    <select id="vehicle">
+        <option>Car</option>
+        <option>Bike</option>
+        <option>Truck</option>
+        <option>SUV</option>
+    </select><br><br>
+
+    <input type="number" id="days" placeholder="Rental Days"><br><br>
+
+    <button onclick="book()">Book Now</button>
+
+    <p id="result"></p>
+
+    <script>
+        function book() {
+            let location = document.getElementById("location").value;
+            let vehicle = document.getElementById("vehicle").value;
+            let days = document.getElementById("days").value;
+
+            if (location != "" && days > 0) {
+                document.getElementById("result").innerHTML =
+                    vehicle + " booked for " + days +
+                    " days in " + location + "!";
+            } else {
+                document.getElementById("result").innerHTML =
+                    "Please enter location and rental days.";
+            }
+        }
+    </script>
+
+</body>
+</html>
